@@ -46,8 +46,8 @@ jobs:
         sudo apt update
         sudo apt install -y pandoc
 
-    - name: Build and run unit tests
-      run: make clean all test
+    - name: lint, build and run unit tests
+      run: make check
       shell: bash
 
     - name: Selfcheck (Run checkmake on Makefile)
